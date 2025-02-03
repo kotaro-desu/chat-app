@@ -1,0 +1,33 @@
+.popup {
+  position: absolute; /* 絶対位置で配置 */
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* 青色背景 */
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  z-index: 1000; /* 他の要素より上に表示 */
+  animation: fadeInOut 10s ease-in-out;
+  margin-bottom: 5.5rem;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

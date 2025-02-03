@@ -1,0 +1,25 @@
+.searchBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem; /* 左側にアイコン分の余白 */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  background-image: url("../../image/mushi.png"); /* アイコンの画像を指定 */
+  background-size: 20px 16px; /* アイコンのサイズ */
+  background-repeat: no-repeat;
+  background-position: 8px center; /* 左端から8pxの位置にアイコン */
+}
+
+.input:focus {
+  border-color: #007bff; /* フォーカス時の青枠 */
+  outline: none; /* デフォルトのアウトラインを削除 */
+}
